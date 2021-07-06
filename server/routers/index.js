@@ -24,8 +24,13 @@ router.post('/login', (req, res) => {
     User.findAll({where: {email}})
     .then(user => {
         if (email && bcrypt.compareSync(password, user.password)) {
-            res.status(201).json({data: user})
+            res.status(200).json({data: user})
+        } else {
+            throw {
+                
+            }
         }
+        
     })
     .catch(err => {
         console.log(err)
