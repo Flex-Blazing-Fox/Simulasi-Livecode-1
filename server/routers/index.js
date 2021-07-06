@@ -26,6 +26,7 @@ router.use('/login', (req, res, next) => {
 
             if(match){
                 const payload = {
+                    id : result.id,
                     email: result.email
                 }
 
@@ -40,7 +41,7 @@ router.use('/login', (req, res, next) => {
     })
 })
 
-router.use('/phostos', authentification, (req,res, next) => {
+router.use('/photos', authentification, (req,res, next) => {
     console.log("cek");
 })
 
