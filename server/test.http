@@ -17,3 +17,8 @@ Content-Type: application/json
     "email": "user1@gmail.com",
     "password": "user1"
 }
+
+### Get photos
+GET {{host}}/photos http/1.1
+Content-Type: application/json
+access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjI1NTc4NDQ3fQ.64vFgtG1bgUSBbwunVzv_6mkEwSWWmk26BDk0ZAuH_M
