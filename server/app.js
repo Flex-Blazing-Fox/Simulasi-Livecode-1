@@ -1,9 +1,13 @@
 const express = require('express')
-const router = require('./routers')
+const routers = require('./routers')
 
 const app = express()
 const PORT = 3000
 
-app.listen(() => {
+app.use(express.json())
+app.use(express.urlencoded({ extended: true }))
+app.use(routers)
+
+app.listen(PORT, () => {
   console.log('Listening on port: ' + PORT)
 })
