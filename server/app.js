@@ -1,3 +1,4 @@
+require('dotenv').config()
 const router = require('express').Router()
 const PORT = 3000
 const { urlencoded } = require('express')
