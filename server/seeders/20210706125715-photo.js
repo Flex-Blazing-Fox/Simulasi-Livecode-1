@@ -18,6 +18,12 @@ module.exports = {
         createdAt: '2020-06-12T16:22:40.469Z',
         updatedAt: '2020-06-12T16:22:40.469Z',
       },
+      {
+        imageUrl: 'https://unsplash.com/photos/yC-Yzbqy7PY',
+        userId: 2,
+        createdAt: '2020-06-12T16:22:40.469Z',
+        updatedAt: '2020-06-12T16:22:40.469Z',
+      },
     ])
   },
 
